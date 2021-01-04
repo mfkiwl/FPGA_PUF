@@ -1,0 +1,2656 @@
+
+*** Running vivado
+    with args -log cmd_handler.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cmd_handler.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source cmd_handler.tcl -notrace
+Command: synth_design -top cmd_handler -part xc7s50fgga484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14576 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 468.262 ; gain = 102.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cmd_handler' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter TX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter RX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH_INDEX bound to: 5 - type: integer 
+	Parameter REQUEST_BUF_MAX bound to: 32 - type: integer 
+	Parameter RESPONSE_BUF_MAX bound to: 16 - type: integer 
+	Parameter CMD_RX_IDLE bound to: 3'b000 
+	Parameter CMD_RX_WRITE bound to: 3'b001 
+	Parameter CMD_RX_WTDATA bound to: 3'b010 
+	Parameter CMD_RX_SKIP bound to: 3'b011 
+	Parameter CMD_RX_SKIPWT bound to: 3'b100 
+	Parameter CMD_RD_IDLE bound to: 3'b000 
+	Parameter CMD_RD_LENG bound to: 3'b001 
+	Parameter CMD_RD_COMBDATA bound to: 3'b010 
+	Parameter CMD_RD_GETDATA bound to: 3'b011 
+	Parameter CMD_RD_WAITEXC bound to: 3'b100 
+	Parameter CMD_TX_IDLE bound to: 2'b00 
+	Parameter CMD_TX_LENG bound to: 2'b01 
+	Parameter CMD_TX_WTSEND bound to: 2'b10 
+	Parameter CMD_TX_GETDATA bound to: 2'b11 
+	Parameter CMD_WR_IDLE bound to: 2'b00 
+	Parameter CMD_WR_ADDCHECK bound to: 2'b01 
+	Parameter CMD_WR_WRDATA bound to: 2'b10 
+	Parameter CMD_WR_GETDATA bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:45]
+INFO: [Synth 8-6157] synthesizing module 'uart_controller8bit' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter TX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter RX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_rx.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 434 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_REC_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+	Parameter S_DATA bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_tx.v:29]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 434 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_SEND_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_tx.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'uart_controller8bit' (3#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:128]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:157]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:358]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:637]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:666]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:838]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH_INDEX bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (4#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:719]
+INFO: [Synth 8-226] default block is never used [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:858]
+INFO: [Synth 8-6157] synthesizing module 'PUF' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:1]
+	Parameter PUF_BIT_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Mux2t1' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Mux2t1.v:1]
+	Parameter MUX_DATA_BIT_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2t1' (5#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Mux2t1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Xor' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Xor.v:1]
+	Parameter XOR_DATA_BIT_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Xor' (6#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Xor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.runs/synth_1/.Xil/Vivado-17664-DESKTOP-5A27JPI/realtime/PLL_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PLL' (8#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.runs/synth_1/.Xil/Vivado-17664-DESKTOP-5A27JPI/realtime/PLL_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Glitch_PUF_Pack' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF_Pack.v:1]
+	Parameter PUF_BIT_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Glitch_PUF' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (9#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6157] synthesizing module 'flipflop_rst' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/flipflop_rst.v:23]
+	Parameter cnt_10 bound to: 24'b010011000100101101000000 
+INFO: [Synth 8-6155] done synthesizing module 'flipflop_rst' (10#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/flipflop_rst.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (11#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'Glitch_PUF' (12#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Glitch_PUF_Pack' (13#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF_Pack.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'm_Glitch_PUF_Pack'. This will prevent further optimization [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PUF' (14#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LBlock_Pack' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock_Pack.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_Comp' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:34]
+INFO: [Synth 8-6157] synthesizing module 'LBlock_ENC' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:447]
+INFO: [Synth 8-6157] synthesizing module 'AES_Comp_EncCore' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:418]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:342]
+INFO: [Synth 8-6157] synthesizing module 's_box9' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:286]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:297]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:297]
+INFO: [Synth 8-6155] done synthesizing module 's_box9' (15#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:286]
+INFO: [Synth 8-6157] synthesizing module 's_box8' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:264]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:275]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:275]
+INFO: [Synth 8-6155] done synthesizing module 's_box8' (16#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:264]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:309]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'round' (17#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:309]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (18#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:342]
+INFO: [Synth 8-6157] synthesizing module 'round_32' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:396]
+INFO: [Synth 8-6157] synthesizing module 'function_f' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:369]
+INFO: [Synth 8-6157] synthesizing module 's_box7' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:242]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:253]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:253]
+INFO: [Synth 8-6155] done synthesizing module 's_box7' (19#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:242]
+INFO: [Synth 8-6157] synthesizing module 's_box6' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:220]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:231]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:231]
+INFO: [Synth 8-6155] done synthesizing module 's_box6' (20#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:220]
+INFO: [Synth 8-6157] synthesizing module 's_box5' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:198]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:209]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:209]
+INFO: [Synth 8-6155] done synthesizing module 's_box5' (21#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:198]
+INFO: [Synth 8-6157] synthesizing module 's_box4' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:176]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:187]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:187]
+INFO: [Synth 8-6155] done synthesizing module 's_box4' (22#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:176]
+INFO: [Synth 8-6157] synthesizing module 's_box3' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:154]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:165]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:165]
+INFO: [Synth 8-6155] done synthesizing module 's_box3' (23#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:154]
+INFO: [Synth 8-6157] synthesizing module 's_box2' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:132]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:143]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:143]
+INFO: [Synth 8-6155] done synthesizing module 's_box2' (24#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:132]
+INFO: [Synth 8-6157] synthesizing module 's_box1' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:110]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:121]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:121]
+INFO: [Synth 8-6155] done synthesizing module 's_box1' (25#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:110]
+INFO: [Synth 8-6157] synthesizing module 's_box0' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:88]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:99]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:99]
+INFO: [Synth 8-6155] done synthesizing module 's_box0' (26#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'function_f' (27#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'round_32' (28#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:396]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Comp_EncCore' (29#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'LBlock_ENC' (30#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:447]
+WARNING: [Synth 8-3848] Net Dout_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:49]
+WARNING: [Synth 8-3848] Net BSY_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:50]
+WARNING: [Synth 8-3848] Net Kvld_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:52]
+WARNING: [Synth 8-3848] Net Dvld_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Comp' (31#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'LBlock_Pack' (32#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock_Pack.v:1]
+WARNING: [Synth 8-6014] Unused sequential element cmdrestate_cnt_reg was removed.  [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:713]
+WARNING: [Synth 8-6014] Unused sequential element response_check_reg was removed.  [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:715]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_handler' (33#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:1]
+WARNING: [Synth 8-3331] design LBlock_Pack has unconnected port Krdy
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 530.391 ; gain = 164.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 530.391 ; gain = 164.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 530.391 ; gain = 164.242
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 256 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s50fgga484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL/PLL_in_context.xdc] for cell 'm_PUF/PLL_inst'
+Finished Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL/PLL_in_context.xdc] for cell 'm_PUF/PLL_inst'
+Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]
+Finished Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cmd_handler_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cmd_handler_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 884.398 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 884.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 884.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 884.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50fgga484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for m_PUF/PLL_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "round" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:171]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:680]
+INFO: [Synth 8-802] inferred FSM for state register 'cmdrstate_reg' in module 'cmd_handler'
+INFO: [Synth 8-5544] ROM "cmdestate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "request_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cmdestate_waitexc_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmdrstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmdrstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmdrstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              001
+                 S_START |                            10000 |                              010
+              S_REC_BYTE |                            01000 |                              011
+                  S_STOP |                            00100 |                              100
+                  S_DATA |                            00010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              001
+                 S_START |                             0010 |                              010
+             S_SEND_BYTE |                             0100 |                              011
+                  S_STOP |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:319]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             CMD_RX_IDLE |                              000 |                              000
+            CMD_RX_WRITE |                              001 |                              001
+           CMD_RX_WTDATA |                              010 |                              010
+             CMD_RX_SKIP |                              011 |                              011
+           CMD_RX_SKIPWT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cmdrstate_reg' using encoding 'sequential' in module 'cmd_handler'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |Glitch_PUF_Pack__GB0 |           1|     45312|
+|2     |Glitch_PUF_Pack__GB1 |           1|     12036|
+|3     |Glitch_PUF_Pack__GB2 |           1|     14868|
+|4     |Glitch_PUF_Pack__GB3 |           1|     18408|
+|5     |PUF__GC0             |           1|       125|
+|6     |cmd_handler__GC0     |           1|     11977|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 128   
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 8     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   4 Input      8 Bit         XORs := 1     
+	   8 Input      8 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               80 Bit    Registers := 3     
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 128   
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 78    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 3     
+	   6 Input    256 Bit        Muxes := 2     
+	   6 Input    128 Bit        Muxes := 1     
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     88 Bit        Muxes := 1     
+	   2 Input     80 Bit        Muxes := 3     
+	   6 Input     80 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 5     
+	   6 Input     64 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 128   
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	  33 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   5 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 282   
+	   3 Input      1 Bit        Muxes := 2     
+	  33 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cmd_handler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input    256 Bit        Muxes := 3     
+	   6 Input    256 Bit        Muxes := 2     
+	   6 Input    128 Bit        Muxes := 1     
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     88 Bit        Muxes := 1     
+	   6 Input     80 Bit        Muxes := 1     
+	   2 Input     80 Bit        Muxes := 1     
+	   6 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__36 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__37 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__38 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__39 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__40 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__41 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__42 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__43 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__44 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__45 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__46 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__47 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__48 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__49 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__50 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__51 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__52 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__53 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__55 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__56 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__57 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__58 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__59 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__61 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__62 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__63 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__64 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__65 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__66 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__67 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__68 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__69 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__70 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__71 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__72 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__73 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__74 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__75 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__76 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__77 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__78 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__79 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__80 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__81 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__82 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__83 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__84 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__85 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__86 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__87 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__88 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__89 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__90 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__91 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__92 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__93 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__94 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__95 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__96 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__97 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__98 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__99 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__100 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__101 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__102 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__103 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__104 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__105 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__106 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__107 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__108 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__109 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__110 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__111 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__112 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__113 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__114 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__115 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__116 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__117 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__118 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__119 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__120 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__121 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__122 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__123 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__124 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__125 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__126 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst__127 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module flipflop_rst 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__22 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__23 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__24 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__25 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__26 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__27 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__28 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__29 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__30 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__31 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__33 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__34 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__35 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__36 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__37 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__38 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__39 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__40 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__41 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__42 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__43 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__44 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__45 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__46 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__47 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__49 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__50 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__51 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__52 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__53 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__54 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__55 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__56 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__57 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__58 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__59 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__60 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__61 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__62 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1__63 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2t1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Xor__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__17 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__18 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__19 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__20 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__21 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__22 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__23 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__24 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__25 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__26 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__27 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__28 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__29 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__30 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor__31 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Xor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module PUF 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module FIFO__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 33    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 36    
+Module FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 33    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 36    
+Module round 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      5 Bit        Muxes := 1     
+	  33 Input      1 Bit        Muxes := 1     
+Module key_expansion 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
+Module function_f 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module round_32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module LBlock_ENC 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module AES_Comp 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module LBlock_Pack 
+Detailed RTL Component Info : 
++---XORs : 
+	   8 Input      8 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "m_uart_rx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_rx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_tx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_tx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_rx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_rx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_rx/bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_tx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_tx/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_uart_tx/bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FIFO_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "m_AES_Comp/AES_Comp_ENC/EC/key_expansion_enc/round_enc/round" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "cmdestate_waitexc_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3331] design LBlock_Pack has unconnected port Krdy
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[7]' (FDRE) to 'response_buffer_reg[6]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[6]' (FDRE) to 'response_buffer_reg[5]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[5]' (FDRE) to 'response_buffer_reg[4]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[4]' (FDRE) to 'response_buffer_reg[3]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[3]' (FDRE) to 'response_buffer_reg[2]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[2]' (FDRE) to 'response_buffer_reg[1]'
+INFO: [Synth 8-3886] merging instance 'response_buffer_reg[1]' (FDRE) to 'response_buffer_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\response_buffer_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LBlock_EncDec_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wr_packet_leng_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:06 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |Glitch_PUF_Pack__GB0 |           1|      6528|
+|2     |Glitch_PUF_Pack__GB1 |           1|      1734|
+|3     |Glitch_PUF_Pack__GB2 |           1|      2142|
+|4     |Glitch_PUF_Pack__GB3 |           1|      2652|
+|5     |PUF__GC0             |           1|       126|
+|6     |cmd_handler__GC0     |           1|      5985|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL_inst/clk_out1' to pin 'PLL_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'PLL_inst/clk_in1' to 'm_PUFi_1/CLK_50M'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL_inst/clk_out2' to pin 'PLL_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'PLL_inst/clk_in1' to 'm_PUFi_1/CLK_50M'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:15 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:16 . Memory (MB): peak = 884.398 ; gain = 518.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |Glitch_PUF_Pack__GB0 |           1|      6528|
+|2     |Glitch_PUF_Pack__GB1 |           1|      1734|
+|3     |Glitch_PUF_Pack__GB2 |           1|      2142|
+|4     |Glitch_PUF_Pack__GB3 |           1|      2652|
+|5     |PUF__GC0             |           1|       126|
+|6     |cmd_handler__GC0     |           1|      5985|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:22 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5410] Found another clock driver \m_PUF/BUFG_inst :O [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:38]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:23 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |PLL           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |PLL    |     1|
+|2     |BUFG   |     2|
+|3     |CARRY4 |  1033|
+|4     |LUT1   |     8|
+|5     |LUT2   |   239|
+|6     |LUT3   |   501|
+|7     |LUT4   |   536|
+|8     |LUT5   |   347|
+|9     |LUT6   |  1235|
+|10    |MUXF7  |    16|
+|11    |FDCE   |    73|
+|12    |FDPE   |   259|
+|13    |FDRE   |  4441|
+|14    |FDRE_1 |    10|
+|15    |FDSE   |     1|
+|16    |LD     |     5|
+|17    |IBUF   |     3|
+|18    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+--------------------+------+
+|      |Instance                                  |Module              |Cells |
++------+------------------------------------------+--------------------+------+
+|1     |top                                       |                    |  8712|
+|2     |  \genblk1.m_uart_controller8bit          |uart_controller8bit |   205|
+|3     |    m_uart_rx                             |uart_rx             |   123|
+|4     |    m_uart_tx                             |uart_tx             |    82|
+|5     |  m_LBlock_Pack                           |LBlock_Pack         |   633|
+|6     |    m_AES_Comp                            |AES_Comp            |   631|
+|7     |      AES_Comp_ENC                        |LBlock_ENC          |   630|
+|8     |        EC                                |AES_Comp_EncCore    |    50|
+|9     |          key_expansion_enc               |key_expansion       |    50|
+|10    |            round_enc                     |round               |    50|
+|11    |  m_PUF                                   |PUF                 |  5941|
+|12    |    m_Glitch_PUF_Pack                     |Glitch_PUF_Pack     |  5888|
+|13    |      \genblk1.genblk1[0].m_Glitch_PUF    |Glitch_PUF          |    46|
+|14    |        flipflop_rst_inst                 |flipflop_rst_254    |    42|
+|15    |      \genblk1.genblk1[100].m_Glitch_PUF  |Glitch_PUF_1        |    46|
+|16    |        flipflop_rst_inst                 |flipflop_rst_253    |    42|
+|17    |      \genblk1.genblk1[101].m_Glitch_PUF  |Glitch_PUF_2        |    46|
+|18    |        flipflop_rst_inst                 |flipflop_rst_252    |    42|
+|19    |      \genblk1.genblk1[102].m_Glitch_PUF  |Glitch_PUF_3        |    46|
+|20    |        flipflop_rst_inst                 |flipflop_rst_251    |    42|
+|21    |      \genblk1.genblk1[103].m_Glitch_PUF  |Glitch_PUF_4        |    46|
+|22    |        flipflop_rst_inst                 |flipflop_rst_250    |    42|
+|23    |      \genblk1.genblk1[104].m_Glitch_PUF  |Glitch_PUF_5        |    46|
+|24    |        flipflop_rst_inst                 |flipflop_rst_249    |    42|
+|25    |      \genblk1.genblk1[105].m_Glitch_PUF  |Glitch_PUF_6        |    46|
+|26    |        flipflop_rst_inst                 |flipflop_rst_248    |    42|
+|27    |      \genblk1.genblk1[106].m_Glitch_PUF  |Glitch_PUF_7        |    46|
+|28    |        flipflop_rst_inst                 |flipflop_rst_247    |    42|
+|29    |      \genblk1.genblk1[107].m_Glitch_PUF  |Glitch_PUF_8        |    46|
+|30    |        flipflop_rst_inst                 |flipflop_rst_246    |    42|
+|31    |      \genblk1.genblk1[108].m_Glitch_PUF  |Glitch_PUF_9        |    46|
+|32    |        flipflop_rst_inst                 |flipflop_rst_245    |    42|
+|33    |      \genblk1.genblk1[109].m_Glitch_PUF  |Glitch_PUF_10       |    46|
+|34    |        flipflop_rst_inst                 |flipflop_rst_244    |    42|
+|35    |      \genblk1.genblk1[10].m_Glitch_PUF   |Glitch_PUF_11       |    46|
+|36    |        flipflop_rst_inst                 |flipflop_rst_243    |    42|
+|37    |      \genblk1.genblk1[110].m_Glitch_PUF  |Glitch_PUF_12       |    46|
+|38    |        flipflop_rst_inst                 |flipflop_rst_242    |    42|
+|39    |      \genblk1.genblk1[111].m_Glitch_PUF  |Glitch_PUF_13       |    46|
+|40    |        flipflop_rst_inst                 |flipflop_rst_241    |    42|
+|41    |      \genblk1.genblk1[112].m_Glitch_PUF  |Glitch_PUF_14       |    46|
+|42    |        flipflop_rst_inst                 |flipflop_rst_240    |    42|
+|43    |      \genblk1.genblk1[113].m_Glitch_PUF  |Glitch_PUF_15       |    46|
+|44    |        flipflop_rst_inst                 |flipflop_rst_239    |    42|
+|45    |      \genblk1.genblk1[114].m_Glitch_PUF  |Glitch_PUF_16       |    46|
+|46    |        flipflop_rst_inst                 |flipflop_rst_238    |    42|
+|47    |      \genblk1.genblk1[115].m_Glitch_PUF  |Glitch_PUF_17       |    46|
+|48    |        flipflop_rst_inst                 |flipflop_rst_237    |    42|
+|49    |      \genblk1.genblk1[116].m_Glitch_PUF  |Glitch_PUF_18       |    46|
+|50    |        flipflop_rst_inst                 |flipflop_rst_236    |    42|
+|51    |      \genblk1.genblk1[117].m_Glitch_PUF  |Glitch_PUF_19       |    46|
+|52    |        flipflop_rst_inst                 |flipflop_rst_235    |    42|
+|53    |      \genblk1.genblk1[118].m_Glitch_PUF  |Glitch_PUF_20       |    46|
+|54    |        flipflop_rst_inst                 |flipflop_rst_234    |    42|
+|55    |      \genblk1.genblk1[119].m_Glitch_PUF  |Glitch_PUF_21       |    46|
+|56    |        flipflop_rst_inst                 |flipflop_rst_233    |    42|
+|57    |      \genblk1.genblk1[11].m_Glitch_PUF   |Glitch_PUF_22       |    46|
+|58    |        flipflop_rst_inst                 |flipflop_rst_232    |    42|
+|59    |      \genblk1.genblk1[120].m_Glitch_PUF  |Glitch_PUF_23       |    46|
+|60    |        flipflop_rst_inst                 |flipflop_rst_231    |    42|
+|61    |      \genblk1.genblk1[121].m_Glitch_PUF  |Glitch_PUF_24       |    46|
+|62    |        flipflop_rst_inst                 |flipflop_rst_230    |    42|
+|63    |      \genblk1.genblk1[122].m_Glitch_PUF  |Glitch_PUF_25       |    46|
+|64    |        flipflop_rst_inst                 |flipflop_rst_229    |    42|
+|65    |      \genblk1.genblk1[123].m_Glitch_PUF  |Glitch_PUF_26       |    46|
+|66    |        flipflop_rst_inst                 |flipflop_rst_228    |    42|
+|67    |      \genblk1.genblk1[124].m_Glitch_PUF  |Glitch_PUF_27       |    46|
+|68    |        flipflop_rst_inst                 |flipflop_rst_227    |    42|
+|69    |      \genblk1.genblk1[125].m_Glitch_PUF  |Glitch_PUF_28       |    46|
+|70    |        flipflop_rst_inst                 |flipflop_rst_226    |    42|
+|71    |      \genblk1.genblk1[126].m_Glitch_PUF  |Glitch_PUF_29       |    46|
+|72    |        flipflop_rst_inst                 |flipflop_rst_225    |    42|
+|73    |      \genblk1.genblk1[127].m_Glitch_PUF  |Glitch_PUF_30       |    46|
+|74    |        flipflop_rst_inst                 |flipflop_rst_224    |    42|
+|75    |      \genblk1.genblk1[12].m_Glitch_PUF   |Glitch_PUF_31       |    46|
+|76    |        flipflop_rst_inst                 |flipflop_rst_223    |    42|
+|77    |      \genblk1.genblk1[13].m_Glitch_PUF   |Glitch_PUF_32       |    46|
+|78    |        flipflop_rst_inst                 |flipflop_rst_222    |    42|
+|79    |      \genblk1.genblk1[14].m_Glitch_PUF   |Glitch_PUF_33       |    46|
+|80    |        flipflop_rst_inst                 |flipflop_rst_221    |    42|
+|81    |      \genblk1.genblk1[15].m_Glitch_PUF   |Glitch_PUF_34       |    46|
+|82    |        flipflop_rst_inst                 |flipflop_rst_220    |    42|
+|83    |      \genblk1.genblk1[16].m_Glitch_PUF   |Glitch_PUF_35       |    46|
+|84    |        flipflop_rst_inst                 |flipflop_rst_219    |    42|
+|85    |      \genblk1.genblk1[17].m_Glitch_PUF   |Glitch_PUF_36       |    46|
+|86    |        flipflop_rst_inst                 |flipflop_rst_218    |    42|
+|87    |      \genblk1.genblk1[18].m_Glitch_PUF   |Glitch_PUF_37       |    46|
+|88    |        flipflop_rst_inst                 |flipflop_rst_217    |    42|
+|89    |      \genblk1.genblk1[19].m_Glitch_PUF   |Glitch_PUF_38       |    46|
+|90    |        flipflop_rst_inst                 |flipflop_rst_216    |    42|
+|91    |      \genblk1.genblk1[1].m_Glitch_PUF    |Glitch_PUF_39       |    46|
+|92    |        flipflop_rst_inst                 |flipflop_rst_215    |    42|
+|93    |      \genblk1.genblk1[20].m_Glitch_PUF   |Glitch_PUF_40       |    46|
+|94    |        flipflop_rst_inst                 |flipflop_rst_214    |    42|
+|95    |      \genblk1.genblk1[21].m_Glitch_PUF   |Glitch_PUF_41       |    46|
+|96    |        flipflop_rst_inst                 |flipflop_rst_213    |    42|
+|97    |      \genblk1.genblk1[22].m_Glitch_PUF   |Glitch_PUF_42       |    46|
+|98    |        flipflop_rst_inst                 |flipflop_rst_212    |    42|
+|99    |      \genblk1.genblk1[23].m_Glitch_PUF   |Glitch_PUF_43       |    46|
+|100   |        flipflop_rst_inst                 |flipflop_rst_211    |    42|
+|101   |      \genblk1.genblk1[24].m_Glitch_PUF   |Glitch_PUF_44       |    46|
+|102   |        flipflop_rst_inst                 |flipflop_rst_210    |    42|
+|103   |      \genblk1.genblk1[25].m_Glitch_PUF   |Glitch_PUF_45       |    46|
+|104   |        flipflop_rst_inst                 |flipflop_rst_209    |    42|
+|105   |      \genblk1.genblk1[26].m_Glitch_PUF   |Glitch_PUF_46       |    46|
+|106   |        flipflop_rst_inst                 |flipflop_rst_208    |    42|
+|107   |      \genblk1.genblk1[27].m_Glitch_PUF   |Glitch_PUF_47       |    46|
+|108   |        flipflop_rst_inst                 |flipflop_rst_207    |    42|
+|109   |      \genblk1.genblk1[28].m_Glitch_PUF   |Glitch_PUF_48       |    46|
+|110   |        flipflop_rst_inst                 |flipflop_rst_206    |    42|
+|111   |      \genblk1.genblk1[29].m_Glitch_PUF   |Glitch_PUF_49       |    46|
+|112   |        flipflop_rst_inst                 |flipflop_rst_205    |    42|
+|113   |      \genblk1.genblk1[2].m_Glitch_PUF    |Glitch_PUF_50       |    46|
+|114   |        flipflop_rst_inst                 |flipflop_rst_204    |    42|
+|115   |      \genblk1.genblk1[30].m_Glitch_PUF   |Glitch_PUF_51       |    46|
+|116   |        flipflop_rst_inst                 |flipflop_rst_203    |    42|
+|117   |      \genblk1.genblk1[31].m_Glitch_PUF   |Glitch_PUF_52       |    46|
+|118   |        flipflop_rst_inst                 |flipflop_rst_202    |    42|
+|119   |      \genblk1.genblk1[32].m_Glitch_PUF   |Glitch_PUF_53       |    46|
+|120   |        flipflop_rst_inst                 |flipflop_rst_201    |    42|
+|121   |      \genblk1.genblk1[33].m_Glitch_PUF   |Glitch_PUF_54       |    46|
+|122   |        flipflop_rst_inst                 |flipflop_rst_200    |    42|
+|123   |      \genblk1.genblk1[34].m_Glitch_PUF   |Glitch_PUF_55       |    46|
+|124   |        flipflop_rst_inst                 |flipflop_rst_199    |    42|
+|125   |      \genblk1.genblk1[35].m_Glitch_PUF   |Glitch_PUF_56       |    46|
+|126   |        flipflop_rst_inst                 |flipflop_rst_198    |    42|
+|127   |      \genblk1.genblk1[36].m_Glitch_PUF   |Glitch_PUF_57       |    46|
+|128   |        flipflop_rst_inst                 |flipflop_rst_197    |    42|
+|129   |      \genblk1.genblk1[37].m_Glitch_PUF   |Glitch_PUF_58       |    46|
+|130   |        flipflop_rst_inst                 |flipflop_rst_196    |    42|
+|131   |      \genblk1.genblk1[38].m_Glitch_PUF   |Glitch_PUF_59       |    46|
+|132   |        flipflop_rst_inst                 |flipflop_rst_195    |    42|
+|133   |      \genblk1.genblk1[39].m_Glitch_PUF   |Glitch_PUF_60       |    46|
+|134   |        flipflop_rst_inst                 |flipflop_rst_194    |    42|
+|135   |      \genblk1.genblk1[3].m_Glitch_PUF    |Glitch_PUF_61       |    46|
+|136   |        flipflop_rst_inst                 |flipflop_rst_193    |    42|
+|137   |      \genblk1.genblk1[40].m_Glitch_PUF   |Glitch_PUF_62       |    46|
+|138   |        flipflop_rst_inst                 |flipflop_rst_192    |    42|
+|139   |      \genblk1.genblk1[41].m_Glitch_PUF   |Glitch_PUF_63       |    46|
+|140   |        flipflop_rst_inst                 |flipflop_rst_191    |    42|
+|141   |      \genblk1.genblk1[42].m_Glitch_PUF   |Glitch_PUF_64       |    46|
+|142   |        flipflop_rst_inst                 |flipflop_rst_190    |    42|
+|143   |      \genblk1.genblk1[43].m_Glitch_PUF   |Glitch_PUF_65       |    46|
+|144   |        flipflop_rst_inst                 |flipflop_rst_189    |    42|
+|145   |      \genblk1.genblk1[44].m_Glitch_PUF   |Glitch_PUF_66       |    46|
+|146   |        flipflop_rst_inst                 |flipflop_rst_188    |    42|
+|147   |      \genblk1.genblk1[45].m_Glitch_PUF   |Glitch_PUF_67       |    46|
+|148   |        flipflop_rst_inst                 |flipflop_rst_187    |    42|
+|149   |      \genblk1.genblk1[46].m_Glitch_PUF   |Glitch_PUF_68       |    46|
+|150   |        flipflop_rst_inst                 |flipflop_rst_186    |    42|
+|151   |      \genblk1.genblk1[47].m_Glitch_PUF   |Glitch_PUF_69       |    46|
+|152   |        flipflop_rst_inst                 |flipflop_rst_185    |    42|
+|153   |      \genblk1.genblk1[48].m_Glitch_PUF   |Glitch_PUF_70       |    46|
+|154   |        flipflop_rst_inst                 |flipflop_rst_184    |    42|
+|155   |      \genblk1.genblk1[49].m_Glitch_PUF   |Glitch_PUF_71       |    46|
+|156   |        flipflop_rst_inst                 |flipflop_rst_183    |    42|
+|157   |      \genblk1.genblk1[4].m_Glitch_PUF    |Glitch_PUF_72       |    46|
+|158   |        flipflop_rst_inst                 |flipflop_rst_182    |    42|
+|159   |      \genblk1.genblk1[50].m_Glitch_PUF   |Glitch_PUF_73       |    46|
+|160   |        flipflop_rst_inst                 |flipflop_rst_181    |    42|
+|161   |      \genblk1.genblk1[51].m_Glitch_PUF   |Glitch_PUF_74       |    46|
+|162   |        flipflop_rst_inst                 |flipflop_rst_180    |    42|
+|163   |      \genblk1.genblk1[52].m_Glitch_PUF   |Glitch_PUF_75       |    46|
+|164   |        flipflop_rst_inst                 |flipflop_rst_179    |    42|
+|165   |      \genblk1.genblk1[53].m_Glitch_PUF   |Glitch_PUF_76       |    46|
+|166   |        flipflop_rst_inst                 |flipflop_rst_178    |    42|
+|167   |      \genblk1.genblk1[54].m_Glitch_PUF   |Glitch_PUF_77       |    46|
+|168   |        flipflop_rst_inst                 |flipflop_rst_177    |    42|
+|169   |      \genblk1.genblk1[55].m_Glitch_PUF   |Glitch_PUF_78       |    46|
+|170   |        flipflop_rst_inst                 |flipflop_rst_176    |    42|
+|171   |      \genblk1.genblk1[56].m_Glitch_PUF   |Glitch_PUF_79       |    46|
+|172   |        flipflop_rst_inst                 |flipflop_rst_175    |    42|
+|173   |      \genblk1.genblk1[57].m_Glitch_PUF   |Glitch_PUF_80       |    46|
+|174   |        flipflop_rst_inst                 |flipflop_rst_174    |    42|
+|175   |      \genblk1.genblk1[58].m_Glitch_PUF   |Glitch_PUF_81       |    46|
+|176   |        flipflop_rst_inst                 |flipflop_rst_173    |    42|
+|177   |      \genblk1.genblk1[59].m_Glitch_PUF   |Glitch_PUF_82       |    46|
+|178   |        flipflop_rst_inst                 |flipflop_rst_172    |    42|
+|179   |      \genblk1.genblk1[5].m_Glitch_PUF    |Glitch_PUF_83       |    46|
+|180   |        flipflop_rst_inst                 |flipflop_rst_171    |    42|
+|181   |      \genblk1.genblk1[60].m_Glitch_PUF   |Glitch_PUF_84       |    46|
+|182   |        flipflop_rst_inst                 |flipflop_rst_170    |    42|
+|183   |      \genblk1.genblk1[61].m_Glitch_PUF   |Glitch_PUF_85       |    46|
+|184   |        flipflop_rst_inst                 |flipflop_rst_169    |    42|
+|185   |      \genblk1.genblk1[62].m_Glitch_PUF   |Glitch_PUF_86       |    46|
+|186   |        flipflop_rst_inst                 |flipflop_rst_168    |    42|
+|187   |      \genblk1.genblk1[63].m_Glitch_PUF   |Glitch_PUF_87       |    46|
+|188   |        flipflop_rst_inst                 |flipflop_rst_167    |    42|
+|189   |      \genblk1.genblk1[64].m_Glitch_PUF   |Glitch_PUF_88       |    46|
+|190   |        flipflop_rst_inst                 |flipflop_rst_166    |    42|
+|191   |      \genblk1.genblk1[65].m_Glitch_PUF   |Glitch_PUF_89       |    46|
+|192   |        flipflop_rst_inst                 |flipflop_rst_165    |    42|
+|193   |      \genblk1.genblk1[66].m_Glitch_PUF   |Glitch_PUF_90       |    46|
+|194   |        flipflop_rst_inst                 |flipflop_rst_164    |    42|
+|195   |      \genblk1.genblk1[67].m_Glitch_PUF   |Glitch_PUF_91       |    46|
+|196   |        flipflop_rst_inst                 |flipflop_rst_163    |    42|
+|197   |      \genblk1.genblk1[68].m_Glitch_PUF   |Glitch_PUF_92       |    46|
+|198   |        flipflop_rst_inst                 |flipflop_rst_162    |    42|
+|199   |      \genblk1.genblk1[69].m_Glitch_PUF   |Glitch_PUF_93       |    46|
+|200   |        flipflop_rst_inst                 |flipflop_rst_161    |    42|
+|201   |      \genblk1.genblk1[6].m_Glitch_PUF    |Glitch_PUF_94       |    46|
+|202   |        flipflop_rst_inst                 |flipflop_rst_160    |    42|
+|203   |      \genblk1.genblk1[70].m_Glitch_PUF   |Glitch_PUF_95       |    46|
+|204   |        flipflop_rst_inst                 |flipflop_rst_159    |    42|
+|205   |      \genblk1.genblk1[71].m_Glitch_PUF   |Glitch_PUF_96       |    46|
+|206   |        flipflop_rst_inst                 |flipflop_rst_158    |    42|
+|207   |      \genblk1.genblk1[72].m_Glitch_PUF   |Glitch_PUF_97       |    46|
+|208   |        flipflop_rst_inst                 |flipflop_rst_157    |    42|
+|209   |      \genblk1.genblk1[73].m_Glitch_PUF   |Glitch_PUF_98       |    46|
+|210   |        flipflop_rst_inst                 |flipflop_rst_156    |    42|
+|211   |      \genblk1.genblk1[74].m_Glitch_PUF   |Glitch_PUF_99       |    46|
+|212   |        flipflop_rst_inst                 |flipflop_rst_155    |    42|
+|213   |      \genblk1.genblk1[75].m_Glitch_PUF   |Glitch_PUF_100      |    46|
+|214   |        flipflop_rst_inst                 |flipflop_rst_154    |    42|
+|215   |      \genblk1.genblk1[76].m_Glitch_PUF   |Glitch_PUF_101      |    46|
+|216   |        flipflop_rst_inst                 |flipflop_rst_153    |    42|
+|217   |      \genblk1.genblk1[77].m_Glitch_PUF   |Glitch_PUF_102      |    46|
+|218   |        flipflop_rst_inst                 |flipflop_rst_152    |    42|
+|219   |      \genblk1.genblk1[78].m_Glitch_PUF   |Glitch_PUF_103      |    46|
+|220   |        flipflop_rst_inst                 |flipflop_rst_151    |    42|
+|221   |      \genblk1.genblk1[79].m_Glitch_PUF   |Glitch_PUF_104      |    46|
+|222   |        flipflop_rst_inst                 |flipflop_rst_150    |    42|
+|223   |      \genblk1.genblk1[7].m_Glitch_PUF    |Glitch_PUF_105      |    46|
+|224   |        flipflop_rst_inst                 |flipflop_rst_149    |    42|
+|225   |      \genblk1.genblk1[80].m_Glitch_PUF   |Glitch_PUF_106      |    46|
+|226   |        flipflop_rst_inst                 |flipflop_rst_148    |    42|
+|227   |      \genblk1.genblk1[81].m_Glitch_PUF   |Glitch_PUF_107      |    46|
+|228   |        flipflop_rst_inst                 |flipflop_rst_147    |    42|
+|229   |      \genblk1.genblk1[82].m_Glitch_PUF   |Glitch_PUF_108      |    46|
+|230   |        flipflop_rst_inst                 |flipflop_rst_146    |    42|
+|231   |      \genblk1.genblk1[83].m_Glitch_PUF   |Glitch_PUF_109      |    46|
+|232   |        flipflop_rst_inst                 |flipflop_rst_145    |    42|
+|233   |      \genblk1.genblk1[84].m_Glitch_PUF   |Glitch_PUF_110      |    46|
+|234   |        flipflop_rst_inst                 |flipflop_rst_144    |    42|
+|235   |      \genblk1.genblk1[85].m_Glitch_PUF   |Glitch_PUF_111      |    46|
+|236   |        flipflop_rst_inst                 |flipflop_rst_143    |    42|
+|237   |      \genblk1.genblk1[86].m_Glitch_PUF   |Glitch_PUF_112      |    46|
+|238   |        flipflop_rst_inst                 |flipflop_rst_142    |    42|
+|239   |      \genblk1.genblk1[87].m_Glitch_PUF   |Glitch_PUF_113      |    46|
+|240   |        flipflop_rst_inst                 |flipflop_rst_141    |    42|
+|241   |      \genblk1.genblk1[88].m_Glitch_PUF   |Glitch_PUF_114      |    46|
+|242   |        flipflop_rst_inst                 |flipflop_rst_140    |    42|
+|243   |      \genblk1.genblk1[89].m_Glitch_PUF   |Glitch_PUF_115      |    46|
+|244   |        flipflop_rst_inst                 |flipflop_rst_139    |    42|
+|245   |      \genblk1.genblk1[8].m_Glitch_PUF    |Glitch_PUF_116      |    46|
+|246   |        flipflop_rst_inst                 |flipflop_rst_138    |    42|
+|247   |      \genblk1.genblk1[90].m_Glitch_PUF   |Glitch_PUF_117      |    46|
+|248   |        flipflop_rst_inst                 |flipflop_rst_137    |    42|
+|249   |      \genblk1.genblk1[91].m_Glitch_PUF   |Glitch_PUF_118      |    46|
+|250   |        flipflop_rst_inst                 |flipflop_rst_136    |    42|
+|251   |      \genblk1.genblk1[92].m_Glitch_PUF   |Glitch_PUF_119      |    46|
+|252   |        flipflop_rst_inst                 |flipflop_rst_135    |    42|
+|253   |      \genblk1.genblk1[93].m_Glitch_PUF   |Glitch_PUF_120      |    46|
+|254   |        flipflop_rst_inst                 |flipflop_rst_134    |    42|
+|255   |      \genblk1.genblk1[94].m_Glitch_PUF   |Glitch_PUF_121      |    46|
+|256   |        flipflop_rst_inst                 |flipflop_rst_133    |    42|
+|257   |      \genblk1.genblk1[95].m_Glitch_PUF   |Glitch_PUF_122      |    46|
+|258   |        flipflop_rst_inst                 |flipflop_rst_132    |    42|
+|259   |      \genblk1.genblk1[96].m_Glitch_PUF   |Glitch_PUF_123      |    46|
+|260   |        flipflop_rst_inst                 |flipflop_rst_131    |    42|
+|261   |      \genblk1.genblk1[97].m_Glitch_PUF   |Glitch_PUF_124      |    46|
+|262   |        flipflop_rst_inst                 |flipflop_rst_130    |    42|
+|263   |      \genblk1.genblk1[98].m_Glitch_PUF   |Glitch_PUF_125      |    46|
+|264   |        flipflop_rst_inst                 |flipflop_rst_129    |    42|
+|265   |      \genblk1.genblk1[99].m_Glitch_PUF   |Glitch_PUF_126      |    46|
+|266   |        flipflop_rst_inst                 |flipflop_rst_128    |    42|
+|267   |      \genblk1.genblk1[9].m_Glitch_PUF    |Glitch_PUF_127      |    46|
+|268   |        flipflop_rst_inst                 |flipflop_rst        |    42|
+|269   |  m_request_FIFO                          |FIFO                |   449|
+|270   |  m_response_FIFO                         |FIFO_0              |   423|
++------+------------------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:24 . Memory (MB): peak = 936.195 ; gain = 570.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:17 . Memory (MB): peak = 936.195 ; gain = 216.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:25 . Memory (MB): peak = 936.195 ; gain = 570.047
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1064 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 936.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 10 instances
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+252 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:30 . Memory (MB): peak = 936.195 ; gain = 582.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 936.195 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.runs/synth_1/cmd_handler.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cmd_handler_utilization_synth.rpt -pb cmd_handler_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 26 10:09:13 2020...

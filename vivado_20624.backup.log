@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 25 15:37:11 2020
+# Process ID: 20624
+# Current directory: C:/Users/admin/Desktop/FPGA_PUF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13396 C:\Users\admin\Desktop\FPGA_PUF\Glitch_PUF.xpr
+# Log file: C:/Users/admin/Desktop/FPGA_PUF/vivado.log
+# Journal file: C:/Users/admin/Desktop/FPGA_PUF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 760.328 ; gain = 190.941
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7s50fgga484-1
+Top: cmd_handler
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 891.438 ; gain = 58.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cmd_handler' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter TX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter RX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH_INDEX bound to: 5 - type: integer 
+	Parameter REQUEST_BUF_MAX bound to: 32 - type: integer 
+	Parameter RESPONSE_BUF_MAX bound to: 16 - type: integer 
+	Parameter CMD_RX_IDLE bound to: 3'b000 
+	Parameter CMD_RX_WRITE bound to: 3'b001 
+	Parameter CMD_RX_WTDATA bound to: 3'b010 
+	Parameter CMD_RX_SKIP bound to: 3'b011 
+	Parameter CMD_RX_SKIPWT bound to: 3'b100 
+	Parameter CMD_RD_IDLE bound to: 3'b000 
+	Parameter CMD_RD_LENG bound to: 3'b001 
+	Parameter CMD_RD_COMBDATA bound to: 3'b010 
+	Parameter CMD_RD_GETDATA bound to: 3'b011 
+	Parameter CMD_RD_WAITEXC bound to: 3'b100 
+	Parameter CMD_TX_IDLE bound to: 2'b00 
+	Parameter CMD_TX_LENG bound to: 2'b01 
+	Parameter CMD_TX_WTSEND bound to: 2'b10 
+	Parameter CMD_TX_GETDATA bound to: 2'b11 
+	Parameter CMD_WR_IDLE bound to: 2'b00 
+	Parameter CMD_WR_ADDCHECK bound to: 2'b01 
+	Parameter CMD_WR_WRDATA bound to: 2'b10 
+	Parameter CMD_WR_GETDATA bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:45]
+INFO: [Synth 8-6157] synthesizing module 'uart_controller8bit' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter TX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+	Parameter RX_DATA_BYTE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_rx.v:1]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 434 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_REC_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+	Parameter S_DATA bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_tx.v:29]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 434 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_SEND_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_tx.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'uart_controller8bit' (3#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:128]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:157]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:358]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:637]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:666]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:838]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH_INDEX bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (4#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:719]
+INFO: [Synth 8-226] default block is never used [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:858]
+INFO: [Synth 8-6157] synthesizing module 'PUF' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:1]
+	Parameter PUF_BIT_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Mux2t1' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Mux2t1.v:1]
+	Parameter MUX_DATA_BIT_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2t1' (5#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Mux2t1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Xor' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Xor.v:1]
+	Parameter XOR_DATA_BIT_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Xor' (6#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Xor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'PLL' [C:/Users/admin/Desktop/FPGA_PUF/.Xil/Vivado-20624-DESKTOP-5A27JPI/realtime/PLL_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PLL' (8#1) [C:/Users/admin/Desktop/FPGA_PUF/.Xil/Vivado-20624-DESKTOP-5A27JPI/realtime/PLL_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Glitch_PUF_Pack' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF_Pack.v:1]
+	Parameter PUF_BIT_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Glitch_PUF' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (9#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:968]
+INFO: [Synth 8-6157] synthesizing module 'flipflop_rst' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/flipflop_rst.v:23]
+	Parameter cnt_10 bound to: 24'b010011000100101101000000 
+INFO: [Synth 8-6155] done synthesizing module 'flipflop_rst' (10#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/flipflop_rst.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDPE' [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDPE' (11#1) [E:/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3911]
+INFO: [Synth 8-6155] done synthesizing module 'Glitch_PUF' (12#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Glitch_PUF_Pack' (13#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/Glitch_PUF_Pack.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'm_Glitch_PUF_Pack'. This will prevent further optimization [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'PUF' (14#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PUF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LBlock_Pack' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock_Pack.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AES_Comp' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:34]
+INFO: [Synth 8-6157] synthesizing module 'LBlock_ENC' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:447]
+INFO: [Synth 8-6157] synthesizing module 'AES_Comp_EncCore' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:418]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:342]
+INFO: [Synth 8-6157] synthesizing module 's_box9' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:286]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:297]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:297]
+INFO: [Synth 8-6155] done synthesizing module 's_box9' (15#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:286]
+INFO: [Synth 8-6157] synthesizing module 's_box8' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:264]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:275]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:275]
+INFO: [Synth 8-6155] done synthesizing module 's_box8' (16#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:264]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:309]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'round' (17#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:309]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (18#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:342]
+INFO: [Synth 8-6157] synthesizing module 'round_32' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:396]
+INFO: [Synth 8-6157] synthesizing module 'function_f' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:369]
+INFO: [Synth 8-6157] synthesizing module 's_box7' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:242]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:253]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:253]
+INFO: [Synth 8-6155] done synthesizing module 's_box7' (19#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:242]
+INFO: [Synth 8-6157] synthesizing module 's_box6' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:220]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:231]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:231]
+INFO: [Synth 8-6155] done synthesizing module 's_box6' (20#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:220]
+INFO: [Synth 8-6157] synthesizing module 's_box5' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:198]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:209]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:209]
+INFO: [Synth 8-6155] done synthesizing module 's_box5' (21#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:198]
+INFO: [Synth 8-6157] synthesizing module 's_box4' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:176]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:187]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:187]
+INFO: [Synth 8-6155] done synthesizing module 's_box4' (22#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:176]
+INFO: [Synth 8-6157] synthesizing module 's_box3' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:154]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:165]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:165]
+INFO: [Synth 8-6155] done synthesizing module 's_box3' (23#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:154]
+INFO: [Synth 8-6157] synthesizing module 's_box2' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:132]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:143]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:143]
+INFO: [Synth 8-6155] done synthesizing module 's_box2' (24#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:132]
+INFO: [Synth 8-6157] synthesizing module 's_box1' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:110]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:121]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:121]
+INFO: [Synth 8-6155] done synthesizing module 's_box1' (25#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:110]
+INFO: [Synth 8-6157] synthesizing module 's_box0' [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:88]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:99]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:99]
+INFO: [Synth 8-6155] done synthesizing module 's_box0' (26#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'function_f' (27#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'round_32' (28#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:396]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Comp_EncCore' (29#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'LBlock_ENC' (30#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:447]
+WARNING: [Synth 8-3848] Net Dout_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:49]
+WARNING: [Synth 8-3848] Net BSY_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:50]
+WARNING: [Synth 8-3848] Net Kvld_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:52]
+WARNING: [Synth 8-3848] Net Dvld_D in module/entity AES_Comp does not have driver. [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Comp' (31#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'LBlock_Pack' (32#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/LBlock/LBlock_Pack.v:1]
+WARNING: [Synth 8-6014] Unused sequential element cmdrestate_cnt_reg was removed.  [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:713]
+WARNING: [Synth 8-6014] Unused sequential element response_check_reg was removed.  [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:715]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_handler' (33#1) [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_handler.v:1]
+WARNING: [Synth 8-3331] design LBlock_Pack has unconnected port Krdy
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 944.578 ; gain = 111.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 944.578 ; gain = 111.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 944.578 ; gain = 111.195
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL.dcp' for cell 'm_PUF/PLL_inst'
+INFO: [Netlist 29-17] Analyzing 257 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s50fgga484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL_board.xdc] for cell 'm_PUF/PLL_inst/inst'
+Finished Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL_board.xdc] for cell 'm_PUF/PLL_inst/inst'
+Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL.xdc] for cell 'm_PUF/PLL_inst/inst'
+Finished Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL.xdc] for cell 'm_PUF/PLL_inst/inst'
+Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]
+Finished Parsing XDC File [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/constrs_1/new/Glitch_PUF.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cmd_handler_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cmd_handler_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1286.152 ; gain = 0.000
+Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL_late.xdc] for cell 'm_PUF/PLL_inst/inst'
+Finished Parsing XDC File [c:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL/PLL_late.xdc] for cell 'm_PUF/PLL_inst/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1286.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1328.566 ; gain = 495.184
+110 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1328.566 ; gain = 495.184
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 25 15:41:15 2020...

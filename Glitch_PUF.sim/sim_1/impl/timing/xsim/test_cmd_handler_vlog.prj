@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/PUF/PLL" \
+"test_cmd_handler_time_impl.v" \
+"../../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/test_cmd_handler.v" \
+
+# Do not sort compile order
+nosort

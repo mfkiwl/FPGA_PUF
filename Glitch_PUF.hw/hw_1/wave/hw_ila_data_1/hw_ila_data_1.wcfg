@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/admin/Desktop/FPGA_PUF/Glitch_PUF.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2913fs"></ZoomEndTime>
+      <Cursor1Time time="568000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="323"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="70" />
+   <wvobject fp_name="debug_tx_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_tx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="debug_tx_vld" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_tx_vld</obj_property>
+      <obj_property name="ObjectShortName">debug_tx_vld</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="debug_request_FIFO_r_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_request_FIFO_r_en</obj_property>
+      <obj_property name="ObjectShortName">debug_request_FIFO_r_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="debug_request_FIFO_cmdnum" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_request_FIFO_cmdnum[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_request_FIFO_cmdnum[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="debug_cmdtstate" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_cmdtstate[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_cmdtstate[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="debug_request_FIFO_cmdnum" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">debug_request_FIFO_cmdnum[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_request_FIFO_cmdnum[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[0]_31" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[0]_31[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[0]_31[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[10]_21" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[10]_21[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[10]_21[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[11]_20" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[11]_20[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[11]_20[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[12]_19" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[12]_19[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[12]_19[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[13]_18" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[13]_18[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[13]_18[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[14]_17" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[14]_17[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[14]_17[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[15]_16" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[15]_16[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[15]_16[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[16]_15" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[16]_15[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[16]_15[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[17]_14" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[17]_14[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[17]_14[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[18]_13" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[18]_13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[18]_13[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[19]_12" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[19]_12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[19]_12[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[1]_30" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[1]_30[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[1]_30[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[20]_11" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[20]_11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[20]_11[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[21]_10" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[21]_10[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[21]_10[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[22]_9" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[22]_9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[22]_9[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[23]_8" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[23]_8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[23]_8[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[24]_7" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[24]_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[24]_7[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[25]_6" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[25]_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[25]_6[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[26]_5" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[26]_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[26]_5[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[27]_4" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[27]_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[27]_4[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[28]_3" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[28]_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[28]_3[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[29]_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[29]_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[29]_2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[2]_29" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[2]_29[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[2]_29[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[30]_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[30]_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[30]_1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[31]_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[31]_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[31]_0[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[3]_28" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[3]_28[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[3]_28[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[4]_27" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[4]_27[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[4]_27[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[5]_26" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[5]_26[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[5]_26[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[6]_25" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[6]_25[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[6]_25[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[7]_24" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[7]_24[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[7]_24[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[8]_23" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[8]_23[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[8]_23[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_request_FIFO/debug_FIFO[9]_22" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_request_FIFO/debug_FIFO[9]_22[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[9]_22[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[0]_31" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[0]_31[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[0]_31[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[10]_21" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[10]_21[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[10]_21[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[11]_20" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[11]_20[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[11]_20[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[12]_19" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[12]_19[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[12]_19[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[13]_18" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[13]_18[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[13]_18[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[14]_17" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[14]_17[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[14]_17[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[15]_16" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[15]_16[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[15]_16[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[16]_15" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[16]_15[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[16]_15[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[17]_14" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[17]_14[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[17]_14[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[18]_13" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[18]_13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[18]_13[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[19]_12" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[19]_12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[19]_12[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[1]_30" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[1]_30[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[1]_30[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[20]_11" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[20]_11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[20]_11[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[21]_10" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[21]_10[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[21]_10[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[22]_9" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[22]_9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[22]_9[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[23]_8" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[23]_8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[23]_8[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[24]_7" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[24]_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[24]_7[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[25]_6" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[25]_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[25]_6[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[26]_5" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[26]_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[26]_5[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[27]_4" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[27]_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[27]_4[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[28]_3" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[28]_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[28]_3[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[29]_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[29]_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[29]_2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[2]_29" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[2]_29[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[2]_29[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[30]_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[30]_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[30]_1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[31]_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[31]_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[31]_0[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[3]_28" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[3]_28[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[3]_28[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[4]_27" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[4]_27[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[4]_27[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[5]_26" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[5]_26[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[5]_26[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[6]_25" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[6]_25[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[6]_25[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[7]_24" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[7]_24[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[7]_24[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[8]_23" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[8]_23[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[8]_23[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="m_response_FIFO/debug_FIFO[9]_22" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_response_FIFO/debug_FIFO[9]_22[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_FIFO[9]_22[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

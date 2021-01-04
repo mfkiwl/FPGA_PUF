@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Glitch_PUF.srcs/sources_1/ip/PLL_1" \
+"../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_receiver.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/uart_rx.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/uart_tx.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/LBlockUART/test_cmd_handler.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

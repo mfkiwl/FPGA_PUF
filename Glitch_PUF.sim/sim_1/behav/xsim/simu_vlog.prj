@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Glitch_PUF.srcs/sources_1/ip/PLL_1" \
+"../../../../Glitch_PUF.srcs/sources_1/ip/PLL_1/PLL_clk_wiz.v" \
+"../../../../Glitch_PUF.srcs/sources_1/ip/PLL_1/PLL.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/Glitch_PUF.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/Glitch_PUF_64.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/PUF.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/flipflop_rst.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/uart_module.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/uart_rx.v" \
+"../../../../Glitch_PUF.srcs/sources_1/new/uart_tx.v" \
+"../../../../Glitch_PUF.srcs/sim_1/new/simu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

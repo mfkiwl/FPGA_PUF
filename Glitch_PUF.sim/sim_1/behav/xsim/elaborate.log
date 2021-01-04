@@ -1,0 +1,23 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/SoftWare/Xilinx/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 628d7094fff347f085a9b34c8c1afb78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_cmd_handler_behav xil_defaultlib.test_cmd_handler xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'tx_data' [D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/cmd_receiver.v" Line 1. Module cmd_handler_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/uart_controller8bit.v" Line 1. Module uart_controller8bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/uart_rx.v" Line 29. Module uart_rx_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/uart_tx.v" Line 29. Module uart_tx_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/SoftWare/Xilinx/VivadoProjects/FPGA/Glitch_PUF/Glitch_PUF.srcs/sources_1/new/LBlockUART/uart/FIFO.v" Line 1. Module FIFO(DATA_WIDTH=8,DATA_DEPTH_INDEX=5) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.uart_controller8bit
+Compiling module xil_defaultlib.FIFO(DATA_WIDTH=8,DATA_DEPTH_IND...
+Compiling module xil_defaultlib.cmd_handler_default
+Compiling module xil_defaultlib.test_cmd_handler
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_cmd_handler_behav
